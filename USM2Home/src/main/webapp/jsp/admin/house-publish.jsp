@@ -387,7 +387,6 @@
 
 <%@ include file="module/_footer.jsp" %>
 <script src="/assets/plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
-<script src="/assets/plugins/bootstrap-fileinput/js/locales/zh.js"></script>
 <script>
     $(function () {
         var timestamp = Date.parse(new Date());
@@ -395,29 +394,22 @@
         var control = $("#file");
         var uploadUrl = "/file/upload?key=" + timestamp;
         control.fileinput({
-            language: 'zh', //设置语言
-            uploadUrl: uploadUrl, //上传的地址
-            allowedFileExtensions: ['png', 'jpeg', 'jpg', 'gif'],//接收的文件后缀
-            showUpload: true, //显示批量上传按钮
-            showCaption: false,//是否显示标题
-            browseClass: "btn btn-primary", //按钮样式
-            dropZoneEnabled: true,//是否显示拖拽区域
-            //minImageWidth: 50, //图片的最小宽度
-            //minImageHeight: 50,//图片的最小高度
-            //maxImageWidth: 1000,//图片的最大宽度
-            //maxImageHeight: 1000,//图片的最大高度
-            maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            uploadUrl: uploadUrl,
+            allowedFileExtensions: ['png', 'jpeg', 'jpg', 'gif'],
+            showUpload: true,
+            showCaption: false,
+            browseClass: "btn btn-primary",
+            dropZoneEnabled: true,
+            maxFileSize: 0,
             minFileCount: 0,
             maxFileCount: 100,
             enctype: 'multipart/form-data',
             validateInitialCount: true,
             previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
-
             msgFilesTooMany: "The number of files selected for upload ({n}) exceeds the maximum allowed value {m}!",
         });
-        //导入文件上传完成之后的事件
         $("#file").on("fileuploaded", function (event, data, previewId, index) {
-            // alert('上传成功');
+            // Upload completed
         });
     });
 </script>
