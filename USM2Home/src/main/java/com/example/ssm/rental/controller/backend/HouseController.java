@@ -133,18 +133,10 @@ public class HouseController extends BaseController {
         try {
             // 发布房子，设置用户ID
             if (house.getId() == null) {
-                // 新房屋
                 house.setCreateTime(new Date());
                 house.setUserId(getLoginUserId());
-                // 新发布的房屋设置为待审核状态
-                house.setStatus(HouseStatusEnum.NOT_CHECK.getValue());
-            } else {
-                // 更新已存在的房屋
-                House existingHouse = houseService.get(house.getId());
-                if (existingHouse != null) {
-                    // 保留原有状态
-                    house.setStatus(existingHouse.getStatus());
-                }
+                // 设置默认城市为 Penang
+                house.setCity("Penang");
             }
 
             // 设置轮播图第一张图片为缩略图
@@ -157,11 +149,13 @@ public class HouseController extends BaseController {
                 house.setThumbnailUrl(imgUrlList.get(0));
                 house.setSlideUrl(JSON.toJSONString(imgUrlList));
             }
+            
             // 校验经纬度坐标
             if (house.getLongitudeLatitude() != null && !house.getLongitudeLatitude().contains(",")) {
                 return JsonResult.error("please input a valid longitude and latitude coordinate");
             }
 
+            house.setStatus(HouseStatusEnum.NOT_CHECK.getValue());
             houseService.insertOrUpdate(house);
         } catch (Exception e) {
             e.printStackTrace();

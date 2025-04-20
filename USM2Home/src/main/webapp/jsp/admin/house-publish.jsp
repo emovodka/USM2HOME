@@ -21,6 +21,7 @@
                     <form action="" id="houseForm">
                         <input type="hidden" name="id" value="${house.id}">
                         <input type="hidden" id="key" name="key">
+                        <input type="hidden" name="city" value="Penang">
                         <!-- Submit Form -->
                         <div class="col-lg-12 col-md-12">
 

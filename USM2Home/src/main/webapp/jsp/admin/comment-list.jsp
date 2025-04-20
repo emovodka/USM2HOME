@@ -44,8 +44,8 @@
                                     <fmt:formatDate pattern="yyyy-MM-dd" value="${c.createTime}"/>
                                 </td>
                                 <td class="action">
-                                    <a href="/post/detail/${c.postId}#comment-${c.id}" class="btn btn-primary btn-xs">查看</a>
-                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger" onclick="deleteComment(${c.id})">删除</a>
+                                    <a href="/post/detail/${c.postId}#comment-${c.id}" class="btn btn-primary btn-xs">View</a>
+                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger" onclick="deleteComment(${c.id})">Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>
