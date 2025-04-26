@@ -114,7 +114,6 @@
                         </div>
                         <div class="property-details">
                             <h5 class="mb-1">Plaza Ivory</h5>
-                            <p class="mb-0 text-muted">6 properties for rent</p>
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
@@ -125,7 +124,115 @@
                         </div>
                         <div class="property-details">
                             <h5 class="mb-1">E-park</h5>
-                            <p class="mb-0 text-muted">10 properties for rent</p>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+
+                    <a href="/property/detail/n-park" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">N-Park</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/sunny-ville" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Sunny Ville</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/university-heights" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">University Heights</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/starhill" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Starhill</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/gambier-heights" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Gambier Heights</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/arte-s" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Arte S</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/sri-saujana" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Sri Saujana</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/quaywest-residence" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">QuayWest Residence</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/tropicana-bay-residence" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Tropicana Bay Residence</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/taman-pekaka" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Taman Pekaka</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/the-view" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">The View</h5>
+                        </div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
+                    <a href="/property/detail/putra-place" class="property-item">
+                        <div class="property-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="mb-1">Putra Place</h5>
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
@@ -158,8 +265,19 @@ function initMap() {
     // Add markers for properties
     const locations = [
         { name: "Plaza Ivory", lat: 5.3557, lng: 100.3023, url: "/property/detail/plaza-ivory" },
-        { name: "E-park", lat: 5.3577, lng: 100.3043, url: "/property/detail/e-park" }
-        // Add more locations as needed
+        { name: "E-park", lat: 5.3577, lng: 100.3043, url: "/property/detail/e-park" },
+        { name: "N-Park", lat: 5.3577, lng: 100.3043, url: "/property/detail/n-park" },
+        { name: "Sunny Ville", lat: 5.3577, lng: 100.3043, url: "/property/detail/sunny-ville" },
+        { name: "University Heights", lat: 5.3577, lng: 100.3043, url: "/property/detail/university-heights" },
+        { name: "Starhill", lat: 5.3577, lng: 100.3043, url: "/property/detail/starhill" },
+        { name: "Gambier Heights", lat: 5.3577, lng: 100.3043, url: "/property/detail/gambier-heights" },
+        { name: "Arte S", lat: 5.3577, lng: 100.3043, url: "/property/detail/arte-s" },
+        { name: "Sri Saujana", lat: 5.3577, lng: 100.3043, url: "/property/detail/sri-saujana" },
+        { name: "QuayWest Residence", lat: 5.3577, lng: 100.3043, url: "/property/detail/quaywest-residence" },
+        { name: "Tropicana Bay Residence", lat: 5.3577, lng: 100.3043, url: "/property/detail/tropicana-bay-residence" },
+        { name: "Taman Pekaka", lat: 5.3577, lng: 100.3043, url: "/property/detail/taman-pekaka" },
+        { name: "The View", lat: 5.3577, lng: 100.3043, url: "/property/detail/the-view" },
+        { name: "Putra Place", lat: 5.3577, lng: 100.3043, url: "/property/detail/putra-place" }
     ];
 
     locations.forEach(location => {
