@@ -108,7 +108,7 @@
 
                 <!-- Property Items -->
                 <div class="property-list">
-                    <a href="/property/detail/plaza-ivory" class="property-item">
+                    <a href="/community?name=Plaza Ivory" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -118,7 +118,7 @@
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
 
-                    <a href="/property/detail/e-park" class="property-item">
+                    <a href="/community?name=E-Park" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -128,7 +128,7 @@
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
 
-                    <a href="/property/detail/n-park" class="property-item">
+                    <a href="/community?name=N-Park" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -137,7 +137,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/sunny-ville" class="property-item">
+                    <a href="/community?name=Sunny Ville" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -146,7 +146,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/university-heights" class="property-item">
+                    <a href="/community?name=University Heights" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -155,7 +155,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/starhill" class="property-item">
+                    <a href="/community?name=Starhill" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -164,7 +164,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/gambier-heights" class="property-item">
+                    <a href="/community?name=Gambier Heights" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -173,7 +173,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/arte-s" class="property-item">
+                    <a href="/community?name=Arte S" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -182,7 +182,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/sri-saujana" class="property-item">
+                    <a href="/community?name=Sri Saujana" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -191,7 +191,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/quaywest-residence" class="property-item">
+                    <a href="/community?name=QuayWest Residence" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -200,7 +200,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/tropicana-bay-residence" class="property-item">
+                    <a href="/community?name=Tropicana Bay Residence" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -209,7 +209,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/taman-pekaka" class="property-item">
+                    <a href="/community?name=Taman Pekaka" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
@@ -218,7 +218,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/the-view" class="property-item">
+                    <a href="/community?name=The View" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -227,7 +227,7 @@
                         </div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-                    <a href="/property/detail/putra-place" class="property-item">
+                    <a href="/community?name=Putra Place" class="property-item">
                         <div class="property-icon">
                             <i class="fas fa-building"></i>
                         </div>
