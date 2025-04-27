@@ -24,6 +24,10 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Arrays;
 
 /**
  * 房子控制器
@@ -36,6 +40,37 @@ public class HouseController extends BaseController {
 
     @Autowired
     private UserService userService;
+
+    // 写死所有小区信息
+    private static final Map<String, Map<String, Object>> COMMUNITY_DATA = new HashMap<>();
+    static {
+        Map<String, Object> plazaIvory = new HashMap<>();
+        plazaIvory.put("info", "Plaza Ivory is a premium residential community offering modern luxury living in the heart of the city.");
+        plazaIvory.put("address", "88 Ivory Boulevard, Central District");
+        plazaIvory.put("year", "2020");
+        plazaIvory.put("developer", "Ivory Estates Development Ltd.");
+        plazaIvory.put("distance", "500m to USM, 200m to Metro Station");
+        plazaIvory.put("images", Arrays.asList(
+            "/assets/img/community/pi_1.jpeg",
+            "/assets/img/community/pi_2.jpg",
+            "/assets/img/community/pi_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Plaza Ivory", plazaIvory);
+
+        Map<String, Object> ePark = new HashMap<>();
+        ePark.put("info", "E-Park is a modern community with beautiful gardens and convenient facilities.");
+        ePark.put("address", "123 E-Park Road, East District");
+        ePark.put("year", "2018");
+        ePark.put("developer", "E-Park Development Co.");
+        ePark.put("distance", "800m to USM, 300m to Shopping Mall");
+        ePark.put("images", Arrays.asList(
+            "/assets/img/community/ep_1.png",
+            "/assets/img/community/ep_2.jpeg"
+        ));
+        COMMUNITY_DATA.put("E-Park", ePark);
+
+        // 你可以继续添加其它小区
+    }
 
     /**
      * 房子管理
@@ -307,5 +342,29 @@ public class HouseController extends BaseController {
         return JsonResult.success("check reject success");
     }
 
+    @RequestMapping("/community")
+    public String communityDetail(@RequestParam("name") String communityName, Model model) {
+        model.addAttribute("communityName", communityName);
+
+        Map<String, Object> data = COMMUNITY_DATA.get(communityName);
+        if (data != null) {
+            model.addAttribute("communityInfo", data.get("info"));
+            model.addAttribute("communityAddress", data.get("address"));
+            model.addAttribute("communityYear", data.get("year"));
+            model.addAttribute("communityDeveloper", data.get("developer"));
+            model.addAttribute("communityDistance", data.get("distance"));
+            model.addAttribute("communityImages", data.get("images"));
+        } else {
+            // 没有找到小区，给默认值
+            model.addAttribute("communityInfo", "No info available.");
+            model.addAttribute("communityAddress", "Unknown");
+            model.addAttribute("communityYear", "Unknown");
+            model.addAttribute("communityDeveloper", "Unknown");
+            model.addAttribute("communityDistance", "Unknown");
+            model.addAttribute("communityImages", new ArrayList<>());
+        }
+
+        return "front/community-detail";
+    }
 
 }

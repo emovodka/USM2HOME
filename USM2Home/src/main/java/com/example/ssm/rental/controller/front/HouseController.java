@@ -172,11 +172,6 @@ public class HouseController extends BaseController {
         return JsonResult.success("email sent successfully");
     }
 
-    @RequestMapping("/community")
-    public String communityDetail(@RequestParam("name") String communityName, Model model) {
-        model.addAttribute("communityName", communityName);
-        // 这里可以后续补充小区介绍和房源列表
-        return "front/community-detail";
-    }
+ 
 
 }

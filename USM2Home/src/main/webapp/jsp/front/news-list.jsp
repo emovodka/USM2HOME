@@ -87,7 +87,7 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="mb-4">Find your home...</h1>
-                <p class="text-muted">View popular properties around USM on our map!</p>
+                <p class="text-muted">View popular properties around USM!</p>
             </div>
         </div>
         
@@ -102,138 +102,104 @@
         <div class="row">
             <div class="col-12">
                 <div class="property-count">
-                    <p class="mb-0">Scroll down to check all spots!</p>
-                    <small class="text-muted">Total 100 properties available for rent</small>
+            
+                
                 </div>
 
-                <!-- Property Items -->
-                <div class="property-list">
+                <!-- Near Gate 1 分组 -->
+                <div style="background: #2196f3; color: #fff; border-radius: 12px 12px 0 0; padding: 16px 20px; font-size: 22px; font-weight: 600; margin-top: 30px;">
+                    Near Gate 1
+                </div>
+                <div style="background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 0 8px 0; margin-bottom: 30px;">
                     <a href="/community?name=Plaza Ivory" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Plaza Ivory</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Plaza Ivory</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-
                     <a href="/community?name=E-Park" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">E-park</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">E-Park</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
-
                     <a href="/community?name=N-Park" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">N-Park</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">N-Park</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
+                </div>
+
+                <!-- Near Gate 2 分组 -->
+                <div style="background: #2196f3; color: #fff; border-radius: 12px 12px 0 0; padding: 16px 20px; font-size: 22px; font-weight: 600; margin-top: 30px;">
+                    Near Gate 2
+                </div>
+                <div style="background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 0 8px 0; margin-bottom: 30px;">
                     <a href="/community?name=Sunny Ville" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Sunny Ville</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Sunny Ville</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=University Heights" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">University Heights</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">University Heights</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Starhill" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Starhill</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Starhill</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
+                </div>
+
+                <!-- Near Gate 3 分组 -->
+                <div style="background: #2196f3; color: #fff; border-radius: 12px 12px 0 0; padding: 16px 20px; font-size: 22px; font-weight: 600; margin-top: 30px;">
+                    Near Gate 3
+                </div>
+                <div style="background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 0 8px 0; margin-bottom: 30px;">
                     <a href="/community?name=Gambier Heights" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Gambier Heights</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Gambier Heights</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Arte S" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Arte S</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Arte S</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Sri Saujana" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Sri Saujana</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Sri Saujana</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
+                </div>
+
+                <!-- Near Gate 4 分组 -->
+                <div style="background: #2196f3; color: #fff; border-radius: 12px 12px 0 0; padding: 16px 20px; font-size: 22px; font-weight: 600; margin-top: 30px;">
+                    Near Gate 4
+                </div>
+                <div style="background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 0 8px 0; margin-bottom: 30px;">
                     <a href="/community?name=QuayWest Residence" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">QuayWest Residence</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">QuayWest Residence</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Tropicana Bay Residence" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Tropicana Bay Residence</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Tropicana Bay Residence</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Taman Pekaka" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Taman Pekaka</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Taman Pekaka</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=The View" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">The View</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-home"></i></div>
+                        <div class="property-details"><h5 class="mb-1">The View</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Putra Place" class="property-item">
-                        <div class="property-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="property-details">
-                            <h5 class="mb-1">Putra Place</h5>
-                        </div>
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Putra Place</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                 </div>
