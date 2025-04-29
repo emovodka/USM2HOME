@@ -51,9 +51,9 @@ public class HouseController extends BaseController {
         plazaIvory.put("developer", "Ivory Estates Development Ltd.");
         plazaIvory.put("distance", "500m to USM, 200m to Metro Station");
         plazaIvory.put("images", Arrays.asList(
-            "/assets/img/community/pi_1.jpeg",
-            "/assets/img/community/pi_2.jpg",
-            "/assets/img/community/pi_3.jpeg"
+            "/assets/img/community/pi_2.jpeg",
+            "/assets/img/community/pi_3.jpeg",
+            "/assets/img/community/pi_4.jpeg"
         ));
         COMMUNITY_DATA.put("Plaza Ivory", plazaIvory);
 
@@ -64,12 +64,167 @@ public class HouseController extends BaseController {
         ePark.put("developer", "E-Park Development Co.");
         ePark.put("distance", "800m to USM, 300m to Shopping Mall");
         ePark.put("images", Arrays.asList(
-            "/assets/img/community/ep_1.png",
-            "/assets/img/community/ep_2.jpeg"
+            "/assets/img/community/ep_1.jpeg",
+            "/assets/img/community/ep_2.jpeg",
+            "/assets/img/community/ep_3.jpg"
         ));
         COMMUNITY_DATA.put("E-Park", ePark);
 
-        // 你可以继续添加其它小区
+        Map<String, Object> nPark = new HashMap<>();
+        nPark.put("info", "N-Park is a popular residential community known for its convenient location and vibrant atmosphere.");
+        nPark.put("address", "456 N-Park Avenue, Central District");
+        nPark.put("year", "2015");
+        nPark.put("developer", "N-Park Developers Ltd.");
+        nPark.put("distance", "600m to USM, 250m to Metro Station");
+        nPark.put("images", Arrays.asList(
+            "/assets/img/community/np_1.jpeg",
+            "/assets/img/community/np_2.jpeg",
+            "/assets/img/community/np_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("N-Park", nPark);
+
+        Map<String, Object> sunnyVille = new HashMap<>();
+        sunnyVille.put("info", "Sunny Ville offers a comfortable living environment with plenty of sunlight and green spaces.");
+        sunnyVille.put("address", "789 Sunny Road, East District");
+        sunnyVille.put("year", "2012");
+        sunnyVille.put("developer", "Sunny Ville Group");
+        sunnyVille.put("distance", "1.2km to USM, 500m to Shopping Mall");
+        sunnyVille.put("images", Arrays.asList(
+            "/assets/img/community/sv_1.jpeg",
+            "/assets/img/community/sv_2.jpeg",
+            "/assets/img/community/sv_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Sunny Ville", sunnyVille);
+
+        Map<String, Object> universityHeights = new HashMap<>();
+        universityHeights.put("info", "University Heights is favored by students and staff for its proximity to USM.");
+        universityHeights.put("address", "321 University Heights, North District");
+        universityHeights.put("year", "2010");
+        universityHeights.put("developer", "University Heights Dev.");
+        universityHeights.put("distance", "900m to USM, 400m to Metro Station");
+        universityHeights.put("images", Arrays.asList(
+            "/assets/img/community/uh_1.jpeg",
+            "/assets/img/community/uh_2.jpeg",
+            "/assets/img/community/uh_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("University Heights", universityHeights);
+
+        Map<String, Object> starhill = new HashMap<>();
+        starhill.put("info", "Starhill is a modern community with excellent amenities and scenic views.");
+        starhill.put("address", "654 Starhill Lane, West District");
+        starhill.put("year", "2016");
+        starhill.put("developer", "Starhill Properties");
+        starhill.put("distance", "1.5km to USM, 600m to Shopping Mall");
+        starhill.put("images", Arrays.asList(
+            "/assets/img/community/sh_1.jpg",
+            "/assets/img/community/sh_2.jpeg",
+            "/assets/img/community/sh_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Starhill", starhill);
+
+        Map<String, Object> gambierHeights = new HashMap<>();
+        gambierHeights.put("info", "Gambier Heights is known for its peaceful environment and beautiful landscapes.");
+        gambierHeights.put("address", "987 Gambier Heights, South District");
+        gambierHeights.put("year", "2011");
+        gambierHeights.put("developer", "Gambier Heights Dev.");
+        gambierHeights.put("distance", "2km to USM, 800m to Metro Station");
+        gambierHeights.put("images", Arrays.asList(
+            "/assets/img/community/gh_1.jpeg",
+            "/assets/img/community/gh_2.jpeg",
+            "/assets/img/community/gh_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Gambier Heights", gambierHeights);
+
+        Map<String, Object> arteS = new HashMap<>();
+        arteS.put("info", "Arte S is a stylish and contemporary residential community.");
+        arteS.put("address", "159 Arte S Avenue, Central District");
+        arteS.put("year", "2019");
+        arteS.put("developer", "Arte S Group");
+        arteS.put("distance", "2.5km to USM, 1km to Shopping Mall");
+        arteS.put("images", Arrays.asList(
+            "/assets/img/community/at_1.jpeg",
+            "/assets/img/community/at_2.jpeg",
+            "/assets/img/community/at_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Arte S", arteS);
+
+        Map<String, Object> sriSaujana = new HashMap<>();
+        sriSaujana.put("info", "Sri Saujana offers affordable and comfortable living spaces.");
+        sriSaujana.put("address", "753 Sri Saujana, East District");
+        sriSaujana.put("year", "2013");
+        sriSaujana.put("developer", "Sri Saujana Dev.");
+        sriSaujana.put("distance", "2.8km to USM, 1.2km to Metro Station");
+        sriSaujana.put("images", Arrays.asList(
+                "/assets/img/community/ss_1.jpeg",
+            "/assets/img/community/ss_2.jpg",
+            "/assets/img/community/ss_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Sri Saujana", sriSaujana);
+
+        Map<String, Object> quayWest = new HashMap<>();
+        quayWest.put("info", "QuayWest Residence is a luxury waterfront community.");
+        quayWest.put("address", "852 QuayWest Road, Waterfront District");
+        quayWest.put("year", "2021");
+        quayWest.put("developer", "QuayWest Holdings");
+        quayWest.put("distance", "3km to USM, 1.5km to Metro Station");
+        quayWest.put("images", Arrays.asList(
+            "/assets/img/community/qw_1.jpeg",
+            "/assets/img/community/qw_2.jpeg",
+            "/assets/img/community/qw_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("QuayWest Residence", quayWest);
+
+        Map<String, Object> tropicanaBay = new HashMap<>();
+        tropicanaBay.put("info", "Tropicana Bay Residence features resort-style living by the bay.");
+        tropicanaBay.put("address", "951 Tropicana Bay, Bay District");
+        tropicanaBay.put("year", "2017");
+        tropicanaBay.put("developer", "Tropicana Bay Dev.");
+        tropicanaBay.put("distance", "3.5km to USM, 1.8km to Metro Station");
+        tropicanaBay.put("images", Arrays.asList(
+            "/assets/img/community/tb_1.jpeg",
+            "/assets/img/community/tb_2.jpeg",
+            "/assets/img/community/tb_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Tropicana Bay Residence", tropicanaBay);
+
+        Map<String, Object> tamanPekaka = new HashMap<>();
+        tamanPekaka.put("info", "Taman Pekaka is a well-established community with a friendly neighborhood.");
+        tamanPekaka.put("address", "357 Taman Pekaka, South District");
+        tamanPekaka.put("year", "2008");
+        tamanPekaka.put("developer", "Taman Pekaka Group");
+        tamanPekaka.put("distance", "4km to USM, 2km to Metro Station");
+        tamanPekaka.put("images", Arrays.asList(
+            "/assets/img/community/tp_1.jpeg",
+            "/assets/img/community/tp_2.jpeg",
+            "/assets/img/community/tp_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Taman Pekaka", tamanPekaka);
+
+        Map<String, Object> theView = new HashMap<>();
+        theView.put("info", "The View offers panoramic city and sea views.");
+        theView.put("address", "258 The View, Skyline District");
+        theView.put("year", "2014");
+        theView.put("developer", "The View Dev.");
+        theView.put("distance", "4.5km to USM, 2.2km to Metro Station");
+        theView.put("images", Arrays.asList(
+            "/assets/img/community/tv_1.jpeg",
+            "/assets/img/community/tv_2.jpeg",
+            "/assets/img/community/tv_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("The View", theView);
+
+        Map<String, Object> putraPlace = new HashMap<>();
+        putraPlace.put("info", "Putra Place is a convenient and affordable residential option.");
+        putraPlace.put("address", "159 Putra Place, Central District");
+        putraPlace.put("year", "2009");
+        putraPlace.put("developer", "Putra Place Dev.");
+        putraPlace.put("distance", "5km to USM, 2.5km to Metro Station");
+        putraPlace.put("images", Arrays.asList(
+            "/assets/img/community/pp_1.jpeg",
+            "/assets/img/community/pp_2.jpeg",
+            "/assets/img/community/pp_3.jpeg"
+        ));
+        COMMUNITY_DATA.put("Putra Place", putraPlace);
     }
 
     /**

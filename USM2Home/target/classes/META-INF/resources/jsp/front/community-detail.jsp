@@ -185,12 +185,28 @@
             margin-right: 5px;
             color: #1e88e5;
         }
+        .back-button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 6px 18px;
+            background: #0a4981;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .back-button:hover {
+            background: #1565c0;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="container">
-            <h1>${communityName}</h1>
+        <div class="container" style="display: flex; align-items: center;">
+            <button onclick="window.history.back();" class="back-button" style="margin-right: 40px;">Back</button>
+            <h1 style="margin: 0;">${communityName}</h1>
         </div>
     </div>
     
@@ -213,6 +229,12 @@
                     <div class="info-label">Developer</div>
                     <div class="info-value">
                         <c:out value="${communityDeveloper != null ? communityDeveloper : 'Unknown'}"/>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Distance</div>
+                    <div class="info-value">
+                        <c:out value="${communityDistance != null ? communityDistance : 'Unknown'}"/>
                     </div>
                 </div>
                 <div class="property-description">
