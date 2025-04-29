@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
+import com.example.ssm.rental.common.vo.HouseSearchVO;
 
 /**
  * 房子控制器
@@ -181,7 +182,7 @@ public class HouseController extends BaseController {
         tropicanaBay.put("developer", "Tropicana Bay Dev.");
         tropicanaBay.put("distance", "3.5km to USM, 1.8km to Metro Station");
         tropicanaBay.put("images", Arrays.asList(
-            "/assets/img/community/tb_1.jpeg",
+            "/assets/img/community/tb_1.jpg",
             "/assets/img/community/tb_2.jpeg",
             "/assets/img/community/tb_3.jpeg"
         ));
@@ -207,7 +208,7 @@ public class HouseController extends BaseController {
         theView.put("developer", "The View Dev.");
         theView.put("distance", "4.5km to USM, 2.2km to Metro Station");
         theView.put("images", Arrays.asList(
-            "/assets/img/community/tv_1.jpeg",
+            "/assets/img/community/tv_1.jpg",
             "/assets/img/community/tv_2.jpeg",
             "/assets/img/community/tv_3.jpeg"
         ));
@@ -509,6 +510,14 @@ public class HouseController extends BaseController {
             model.addAttribute("communityDeveloper", data.get("developer"));
             model.addAttribute("communityDistance", data.get("distance"));
             model.addAttribute("communityImages", data.get("images"));
+            
+            // 获取该小区的房源列表
+            HouseSearchVO searchVO = new HouseSearchVO();
+            searchVO.setAddress(communityName);
+            searchVO.setStatus(1);
+            Page<House> page = new Page<>(1, 10);
+            page = houseService.getHousePage(searchVO, page);
+            model.addAttribute("houseList", page.getRecords());
         } else {
             // 没有找到小区，给默认值
             model.addAttribute("communityInfo", "No info available.");
@@ -517,6 +526,7 @@ public class HouseController extends BaseController {
             model.addAttribute("communityDeveloper", "Unknown");
             model.addAttribute("communityDistance", "Unknown");
             model.addAttribute("communityImages", new ArrayList<>());
+            model.addAttribute("houseList", new ArrayList<>());
         }
 
         return "front/community-detail";

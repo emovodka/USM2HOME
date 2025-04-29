@@ -261,25 +261,35 @@
         
         <h2 class="section-title">Apartments For Rent</h2>
         <div class="apartment-grid">
-            <!-- 这里可以用 JSTL 动态渲染房源列表，暂时写死示例 -->
-            <div class="apartment-card">
-                <img src="/api/placeholder/350/200" alt="Three Bedroom Apartment" class="apartment-image">
-                <div class="apartment-info">
-                    <h3 class="apartment-title">${communityName}, Building 3, Unit 1801</h3>
-                    <div class="apartment-details">
-                        <span class="apartment-layout">3 Bedroom, 2 Bath</span>
-                        <span class="apartment-area">120 m²</span>
+            <c:forEach items="${houseList}" var="house">
+                <div class="apartment-card">
+                    <img src="${house.thumbnailUrl}" alt="${house.title}" class="apartment-image">
+                    <div class="apartment-info">
+                        <h3 class="apartment-title">${house.title}</h3>
+                        <div class="apartment-details">
+                            <span class="apartment-layout">${house.bedroomNum} Bedroom, ${house.toiletNum} Bath</span>
+                            <span class="apartment-area">${house.area} m²</span>
+                        </div>
+                        <div class="feature-icons">
+                            <span class="feature-icon"><i>🏠</i> ${house.direction}</span>
+                            <c:if test="${house.hasAirConditioner == 1}">
+                                <span class="feature-icon"><i>❄️</i> AC</span>
+                            </c:if>
+                            <c:if test="${house.hasElevator == 1}">
+                                <span class="feature-icon"><i>🛗</i> Elevator</span>
+                            </c:if>
+                        </div>
+                        <div class="apartment-price">RM ${house.monthRent}/month</div>
+                        <a href="/house/detail/${house.id}" class="view-button">View Details</a>
                     </div>
-                    <div class="feature-icons">
-                        <span class="feature-icon"><i>🏠</i> South-North Facing</span>
-                        <span class="feature-icon"><i>🚄</i> Near Metro</span>
-                        <span class="feature-icon"><i>🛋️</i> Fully Furnished</span>
-                    </div>
-                    <div class="apartment-price">$1,800/month</div>
-                    <button class="view-button">View Details</button>
                 </div>
-            </div>
-            <!-- 你可以继续添加更多房源卡片 -->
+            </c:forEach>
+            
+            <c:if test="${empty houseList}">
+                <div style="text-align: center; width: 100%; padding: 40px 20px;">
+                    <p style="color: #666; font-size: 16px;">No apartments available for rent at the moment.</p>
+                </div>
+            </c:if>
         </div>
     </div>
     
