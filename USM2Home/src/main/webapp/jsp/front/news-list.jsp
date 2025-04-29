@@ -4,7 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ include file="../common/head.jsp" %>
 
-
+<!-- Add Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
 <!-- Custom CSS -->
 <style>
@@ -84,17 +85,14 @@
 <section class="gray-simple">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="mb-4">Find your home...</h1>
-                <p class="text-muted">View popular properties around USM!</p>
-            </div>
+           
         </div>
         
         <!-- Map Container 替换为图片 -->
         <div class="row mb-4">
             <div class="col-12">
                 <div style="width:100%; text-align:center;">
-                    <img src="/assets/img/usmMap.png" alt="USM Area Map" style="max-width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    <img src="/assets/img/Map.png" alt="USM Area Map" style="max-width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
                 </div>
             </div>
         </div>
@@ -132,6 +130,11 @@
                         <div class="property-details"><h5 class="mb-1">Starhill</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
+                    <a href="/community?name=Taman Pekaka" class="property-item">
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Taman Pekaka</h5></div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
                 </div>
 
                 <!-- Near Sungai Dua Entrance 分组 -->
@@ -157,11 +160,6 @@
                     <a href="/community?name=Sri Saujana" class="property-item">
                         <div class="property-icon"><i class="fas fa-building"></i></div>
                         <div class="property-details"><h5 class="mb-1">Sri Saujana</h5></div>
-                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
-                    </a>
-                    <a href="/community?name=Taman Pekaka" class="property-item">
-                        <div class="property-icon"><i class="fas fa-building"></i></div>
-                        <div class="property-details"><h5 class="mb-1">Taman Pekaka</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Sunny Ville" class="property-item">
