@@ -22,7 +22,7 @@
                             ${bill.title}
                         </div>
                         <div class="amount" id="money">
-                            ￥ ${bill.totalAmount}
+                            RM ${bill.totalAmount}
                         </div>
                         <div class="qrcode-img-wrapper" data-role="qrPayImgWrapper">
                             <div data-role="qrPayImg" class="qrcode-img-area">

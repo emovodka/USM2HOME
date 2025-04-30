@@ -22,7 +22,7 @@
                             ${order.house.title}
                         </div>
                         <div class="amount" id="money">
-                            ￥ ${order.totalAmount}
+                            RM ${order.house.deposit}
                         </div>
                         <div class="qrcode-img-wrapper" data-role="qrPayImgWrapper">
                             <div data-role="qrPayImg" class="qrcode-img-area">
