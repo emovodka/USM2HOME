@@ -53,6 +53,13 @@
                                                 <input type="number" name="monthRent" value="${house.monthRent}"
                                                        class="form-control">
                                             </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Deposit (RM)<a href="#" class="tip-topdata"
+                                                              data-tip="Security deposit amount in RM"><i
+                                                        class="ti-help"></i></a></label>
+                                                <input type="number" step="0.01" name="deposit" value="${house.deposit}"
+                                                       class="form-control" min="0">
+                                            </div>
                                             <!--
                                             <div class="form-group col-md-6">
                                                 <label>Daily Parking Fee</label>

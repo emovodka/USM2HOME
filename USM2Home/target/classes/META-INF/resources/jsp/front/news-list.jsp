@@ -85,10 +85,7 @@
 <section class="gray-simple">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="mb-4">Find your home...</h1>
-                <p class="text-muted">View popular properties around USM!</p>
-            </div>
+           
         </div>
         
         <!-- Map Container 替换为图片 -->
@@ -133,6 +130,11 @@
                         <div class="property-details"><h5 class="mb-1">Starhill</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
+                    <a href="/community?name=Taman Pekaka" class="property-item">
+                        <div class="property-icon"><i class="fas fa-building"></i></div>
+                        <div class="property-details"><h5 class="mb-1">Taman Pekaka</h5></div>
+                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
+                    </a>
                 </div>
 
                 <!-- Near Sungai Dua Entrance 分组 -->
@@ -158,11 +160,6 @@
                     <a href="/community?name=Sri Saujana" class="property-item">
                         <div class="property-icon"><i class="fas fa-building"></i></div>
                         <div class="property-details"><h5 class="mb-1">Sri Saujana</h5></div>
-                        <button class="view-btn" onclick="event.stopPropagation();">View</button>
-                    </a>
-                    <a href="/community?name=Taman Pekaka" class="property-item">
-                        <div class="property-icon"><i class="fas fa-building"></i></div>
-                        <div class="property-details"><h5 class="mb-1">Taman Pekaka</h5></div>
                         <button class="view-btn" onclick="event.stopPropagation();">View</button>
                     </a>
                     <a href="/community?name=Sunny Ville" class="property-item">

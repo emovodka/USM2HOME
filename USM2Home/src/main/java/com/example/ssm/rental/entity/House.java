@@ -168,6 +168,11 @@ public class House extends BaseEntity {
     private Integer dayManagingFee;
 
     /**
+     * 押金 (RM)
+     */
+    private Double deposit;
+
+    /**
      * 房东用户
      */
     @TableField(exist = false)
@@ -462,5 +467,13 @@ public class House extends BaseEntity {
 
     public void setDayManagingFee(Integer dayManagingFee) {
         this.dayManagingFee = dayManagingFee;
+    }
+
+    public Double getDeposit() {
+        return deposit;
+    }
+
+    public void setDeposit(Double deposit) {
+        this.deposit = deposit;
     }
 }

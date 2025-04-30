@@ -109,6 +109,11 @@
                                         <div class="property-real-price">
                                             <a href="/house/detail/${c.id}" class="cl-blue">RM ${c.monthRent}
                                                 <span class="price_status">/Month</span></a>
+                                            <div class="deposit-text">
+                                                <c:if test="${c.deposit != null}">
+                                                    Deposit: RM ${Math.round(c.deposit)}
+                                                </c:if>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
