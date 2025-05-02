@@ -47,6 +47,7 @@
             <li class="header">Special functions</li>
             <li><a href="/admin/bill"><i class="fa fa-dollar"></i> <span>Bill management</span></a></li>
             <li><a href="/admin/maintain"><i class="fa fa-gavel"></i> <span>Maintenance management</span></a></li>
+            <li><a href="/admin/feedbackSurvey"><i class="fa fa-star"></i> <span>Feedback Survey</span></a></li>
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-bell"></i> <span>Message management</span>

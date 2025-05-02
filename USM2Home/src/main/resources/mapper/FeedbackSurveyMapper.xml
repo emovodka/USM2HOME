@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ssm.rental.mapper.FeedbackSurveyMapper">
+
+    <insert id="insertFeedbackSurvey" parameterType="com.example.ssm.rental.entity.FeedbackSurvey">
+        INSERT INTO t_feedback_survey
+        (user_id, q1_ui_clear, q2_search_easy, q3_info_true, q4_contact_valid, q5_pic_desc, q6_found_house, q7_fav_contact, q8_flow_smooth, q9_satisfaction, q10_recommend, q11_bug, suggestion)
+        VALUES
+        (#{userId}, #{q1UiClear}, #{q2SearchEasy}, #{q3InfoTrue}, #{q4ContactValid}, #{q5PicDesc}, #{q6FoundHouse}, #{q7FavContact}, #{q8FlowSmooth}, #{q9Satisfaction}, #{q10Recommend}, #{q11Bug}, #{suggestion})
+    </insert>
+
+</mapper>
