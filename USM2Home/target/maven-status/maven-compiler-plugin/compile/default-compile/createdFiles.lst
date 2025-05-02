@@ -24,6 +24,7 @@ com\example\ssm\rental\common\util\AESUtils.class
 com\example\ssm\rental\service\impl\FeedbackServiceImpl.class
 com\example\ssm\rental\controller\backend\MarkController.class
 com\example\ssm\rental\service\impl\CommentServiceImpl.class
+com\example\ssm\rental\controller\front\FeedbackSurveyController.class
 com\example\ssm\rental\common\enums\HouseRentTypeEnum.class
 com\example\ssm\rental\controller\front\PostController.class
 com\example\ssm\rental\common\dto\JsonResult.class

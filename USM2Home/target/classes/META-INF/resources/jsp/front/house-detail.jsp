@@ -108,6 +108,9 @@
                                     </c:choose>
                                 </li>
                                 <li><strong>Rent:</strong>RM ${house.monthRent}/month</li>
+                                <c:if test="${house.deposit != null}">
+                                <li><strong>Deposit:</strong>RM ${Math.round(house.deposit)}</li>
+                                </c:if>
                                 <li><strong>Certificate No:</strong>${house.certificateNo}</li>
                                 <li><strong>Bedroom:</strong>${house.bedroomNum}</li>
                                 <li><strong>Toilet:</strong>${house.toiletNum}</li>
