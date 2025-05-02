@@ -6,3 +6,33 @@
 2025-05-03 00:40:37.882  WARN 13168 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
 2025-05-03 00:40:40.879  WARN 13168 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
 2025-05-03 00:40:59.894  WARN 13168 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:05:47.560  WARN 13168 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:10:34.884  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Starting Application on jamie0511 with PID 20552 (E:\FYPyichi\USM2HOME\USM2Home\target\classes started by jasmine0511 in E:\FYPyichi\USM2HOME\USM2Home)
+2025-05-03 01:10:34.889  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : No active profile set, falling back to default profiles: default
+2025-05-03 01:10:34.968  INFO 20552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03 01:10:34.969  INFO 20552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03 01:10:37.716  INFO 20552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9992 (http)
+2025-05-03 01:10:37.761  INFO 20552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03 01:10:37.762  INFO 20552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-03 01:10:38.294  INFO 20552 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-05-03 01:10:38.310  INFO 20552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03 01:10:38.312  INFO 20552 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3342 ms
+2025-05-03 01:10:38.563  INFO 20552 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-05-03 01:10:38.800  INFO 20552 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-05-03 01:10:40.654  INFO 20552 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-05-03 01:10:41.064  INFO 20552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03 01:10:41.194  INFO 20552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9992 (http) with context path ''
+2025-05-03 01:10:41.200  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Started Application in 6.963 seconds (JVM running for 7.881)
+2025-05-03 01:10:41.207  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Rello started at http://localhost:9992
+2025-05-03 01:10:49.639  INFO 20552 --- [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03 01:10:49.640  INFO 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03 01:10:49.653  INFO 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2025-05-03 01:10:54.187  WARN 20552 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:11:05.699  WARN 20552 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:11:11.850  WARN 20552 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:11:13.810  WARN 20552 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:13:52.984  WARN 20552 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:13:54.873  WARN 20552 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:14:19.854  WARN 20552 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:14:21.617  WARN 20552 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-03 01:21:55.907  WARN 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico

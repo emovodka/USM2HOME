@@ -10,4 +10,8 @@
         (#{userId}, #{q1UiClear}, #{q2SearchEasy}, #{q3InfoTrue}, #{q4ContactValid}, #{q5PicDesc}, #{q6FoundHouse}, #{q7FavContact}, #{q8FlowSmooth}, #{q9Satisfaction}, #{q10Recommend}, #{q11Bug}, #{suggestion})
     </insert>
 
+    <select id="selectAll" resultType="com.example.ssm.rental.entity.FeedbackSurvey">
+        SELECT * FROM t_feedback_survey ORDER BY create_time DESC
+    </select>
+
 </mapper>

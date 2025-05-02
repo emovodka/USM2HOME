@@ -60,7 +60,12 @@
                     <li><a href="/admin/comment"><i class="fa fa-circle-o"></i>Message management</a></li>
                 </ul>
             </li>
-            <li><a href="/admin/feedbackSurvey"><i class="fa fa-star"></i> <span>Feedback Survey</span></a></li>
+            <li>
+                <a href="/admin/feedbackSurvey/dashboard">
+                    <i class="fa fa-bar-chart"></i>
+                    <span>Feedback Survey Dashboard</span>
+                </a>
+            </li>
 
             <li class="header">System management</li>
             <li><a href="/admin/user"><i class="fa fa-cog"></i> <span>User management</span></a></li>
