@@ -7,7 +7,7 @@
 
 
 <!-- ============================ Hero Banner Start================================== -->
-<div class="image-cover hero_banner" style="background:#334aca url(/assets/img/city-7.jpg) no-repeat;"
+<div class="image-cover hero_banner" style="background:#6e127e url(/assets/img/usm.jpeg) no-repeat;"
      data-overlay="1">
     <div class="container">
 

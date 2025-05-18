@@ -3,11 +3,25 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ include file="module/_header.jsp" %>
 
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+<script>
+    var avgData = [
+        ${avg[0]}, ${avg[1]}, ${avg[2]}, ${avg[3]}, ${avg[4]},
+        ${avg[5]}, ${avg[6]}, ${avg[7]}, ${avg[8]}, ${avg[9]}, ${avg[10]}
+    ];
+    var questions = [
+        "UI clear", "Search/filter", "Info accurate", "Contact valid", "Pics/desc",
+        "Found property", "Fav/contact", "Process smooth", "Satisfaction", "Recommend", "Bugs"
+    ];
+</script>
+
 <div class="content-wrapper">
     <section class="content-header">
         <h1>Feedback Survey Dashboard</h1>
     </section>
     <section class="content container-fluid">
+        <div id="surveyChart" style="width: 100%; max-width: 900px; height: 400px; margin: 0 auto 30px auto;"></div>
         <div class="row" style="margin: 5px;">
             <div class="col-md-12" style="padding:20px;">
                 <div class="panel panel-info">
@@ -58,4 +72,33 @@
         </div>
     </section>
 </div>
+
+<script>
+    var chartDom = document.getElementById('surveyChart');
+    var myChart = echarts.init(chartDom);
+    var option = {
+        title: {
+            text: 'Feedback Survey Average Scores',
+            left: 'center'
+        },
+        tooltip: {},
+        xAxis: {
+            type: 'category',
+            data: questions,
+            axisLabel: { interval: 0, rotate: 30 }
+        },
+        yAxis: {
+            type: 'value',
+            min: 0,
+            max: 5
+        },
+        series: [{
+            data: avgData,
+            type: 'bar',
+            itemStyle: { color: '#337ab7' }
+        }]
+    };
+    myChart.setOption(option);
+</script>
+
 <%@ include file="module/_footer.jsp" %>

@@ -1,10 +1,66 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ include file="../common/head.jsp" %>
 
+<style>
+/* 1. 全局字体和背景 */
+body {
+    font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+    background: #f7f7fa;
+    color: #222;
+}
+
+/* 2. 主卡片和图片 */
+.prt_detail_three_clicks {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(110,18,126,0.10);
+    padding: 32px 28px 24px 28px;
+    margin-bottom: 32px;
+    margin-top: 18px;
+    text-align: center;
+}
+.pdt_clicks_price h4 {
+    color: #6e127e;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.pdt_clicks_deposit {
+    color: #6e127e;
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+.pdt_clicks_title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+.pdt_clicks_location {
+    color: #a08bb7;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+}
+
+/* 其余美化略，后续可补充 */
+.side-booking-header {
+    background: #6e127e;
+    border-radius: 16px 16px 0 0;
+    padding: 24px 20px 18px 24px;
+    text-align: left;
+}
+.side-booking-header .price {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+</style>
 
 <!-- ============================ 房子名称 Property Detail Head Start ================================== -->
 <div class="pt-5 pb-5 gray-simple">
@@ -14,6 +70,9 @@
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="prt_detail_three_clicks">
                     <div class="pdt_clicks_price"><h4>RM ${house.monthRent}/month</h4></div>
+                    <c:if test="${house.deposit != null}">
+                        <div class="pdt_clicks_deposit">Deposit: <span style="font-weight:600; color:#6e127e;">RM ${Math.round(house.deposit)}</span></div>
+                    </c:if>
                     <div class="pdt_clicks_title"><h3>${house.title}</h3></div>
                     <div class="pdt_clicks_location"><span><i class="ti-location-pin"></i></span>${house.address}</div>
                 </div>

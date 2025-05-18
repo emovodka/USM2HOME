@@ -1,38 +1,279 @@
-2025-05-03 00:24:37.247  WARN 13168 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:07.227  WARN 13168 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:18.918  WARN 13168 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:28.438  WARN 13168 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:30.139  WARN 13168 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:37.882  WARN 13168 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:40.879  WARN 13168 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 00:40:59.894  WARN 13168 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:05:47.560  WARN 13168 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:10:34.884  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Starting Application on jamie0511 with PID 20552 (E:\FYPyichi\USM2HOME\USM2Home\target\classes started by jasmine0511 in E:\FYPyichi\USM2HOME\USM2Home)
-2025-05-03 01:10:34.889  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : No active profile set, falling back to default profiles: default
-2025-05-03 01:10:34.968  INFO 20552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-03 01:10:34.969  INFO 20552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-03 01:10:37.716  INFO 20552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9992 (http)
-2025-05-03 01:10:37.761  INFO 20552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-03 01:10:37.762  INFO 20552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2025-05-03 01:10:38.294  INFO 20552 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2025-05-03 01:10:38.310  INFO 20552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-03 01:10:38.312  INFO 20552 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3342 ms
-2025-05-03 01:10:38.563  INFO 20552 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2025-05-03 01:10:38.800  INFO 20552 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2025-05-03 01:10:40.654  INFO 20552 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2025-05-03 01:10:41.064  INFO 20552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-03 01:10:41.194  INFO 20552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9992 (http) with context path ''
-2025-05-03 01:10:41.200  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Started Application in 6.963 seconds (JVM running for 7.881)
-2025-05-03 01:10:41.207  INFO 20552 --- [restartedMain] com.example.ssm.rental.Application       : Rello started at http://localhost:9992
-2025-05-03 01:10:49.639  INFO 20552 --- [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-03 01:10:49.640  INFO 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-03 01:10:49.653  INFO 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2025-05-03 01:10:54.187  WARN 20552 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:11:05.699  WARN 20552 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:11:11.850  WARN 20552 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:11:13.810  WARN 20552 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:13:52.984  WARN 20552 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:13:54.873  WARN 20552 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:14:19.854  WARN 20552 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:14:21.617  WARN 20552 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2025-05-03 01:21:55.907  WARN 20552 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 15:59:45.685  INFO 2820 --- [restartedMain] com.example.ssm.rental.Application       : Starting Application on jamie0511 with PID 2820 (E:\FYPyichi\USM2HOME\USM2Home\target\classes started by jasmine0511 in E:\FYPyichi\USM2HOME\USM2Home)
+2025-05-18 15:59:45.704  INFO 2820 --- [restartedMain] com.example.ssm.rental.Application       : No active profile set, falling back to default profiles: default
+2025-05-18 15:59:45.822  INFO 2820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-18 15:59:45.823  INFO 2820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-18 15:59:50.032  INFO 2820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9992 (http)
+2025-05-18 15:59:50.109  INFO 2820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-18 15:59:50.114  INFO 2820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-18 15:59:51.043  INFO 2820 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-05-18 15:59:51.059  INFO 2820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-18 15:59:51.061  INFO 2820 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5235 ms
+2025-05-18 15:59:51.488  INFO 2820 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-05-18 15:59:51.872  INFO 2820 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-05-18 15:59:54.751  INFO 2820 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-05-18 15:59:55.612  INFO 2820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-18 15:59:55.780  INFO 2820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9992 (http) with context path ''
+2025-05-18 15:59:55.787  INFO 2820 --- [restartedMain] com.example.ssm.rental.Application       : Started Application in 11.065 seconds (JVM running for 12.377)
+2025-05-18 15:59:55.796  INFO 2820 --- [restartedMain] com.example.ssm.rental.Application       : Rello started at http://localhost:9992
+2025-05-18 16:00:04.410  INFO 2820 --- [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-18 16:00:04.412  INFO 2820 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-18 16:00:04.431  INFO 2820 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2025-05-18 16:00:12.359  WARN 2820 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:04:05.311  WARN 2820 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:04:08.030  WARN 2820 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:04:09.768  WARN 2820 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:04:11.304  WARN 2820 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:04:13.191  WARN 2820 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:11:22.500  WARN 2820 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:11:27.046  WARN 2820 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:11:46.207  WARN 2820 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:12:47.283  WARN 2820 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:13:46.806  WARN 2820 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:14:33.050  WARN 2820 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:14:36.834  WARN 2820 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:14:41.074  WARN 2820 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:14:42.257  WARN 2820 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:21:32.660  INFO 9532 --- [restartedMain] com.example.ssm.rental.Application       : Starting Application on jamie0511 with PID 9532 (E:\FYPyichi\USM2HOME\USM2Home\target\classes started by jasmine0511 in E:\FYPyichi\USM2HOME\USM2Home)
+2025-05-18 16:21:32.666  INFO 9532 --- [restartedMain] com.example.ssm.rental.Application       : No active profile set, falling back to default profiles: default
+2025-05-18 16:21:32.748  INFO 9532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-18 16:21:32.749  INFO 9532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-18 16:21:35.656  INFO 9532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9992 (http)
+2025-05-18 16:21:35.725  INFO 9532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-18 16:21:35.726  INFO 9532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-18 16:21:36.333  INFO 9532 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-05-18 16:21:36.343  INFO 9532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-18 16:21:36.344  INFO 9532 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3594 ms
+2025-05-18 16:21:36.638  INFO 9532 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-05-18 16:21:36.942  INFO 9532 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-05-18 16:21:38.989  INFO 9532 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-05-18 16:21:39.476  INFO 9532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-18 16:21:39.643  INFO 9532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9992 (http) with context path ''
+2025-05-18 16:21:39.648  INFO 9532 --- [restartedMain] com.example.ssm.rental.Application       : Started Application in 7.713 seconds (JVM running for 16.619)
+2025-05-18 16:21:39.656  INFO 9532 --- [restartedMain] com.example.ssm.rental.Application       : Rello started at http://localhost:9992
+2025-05-18 16:21:59.927  INFO 9532 --- [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-18 16:21:59.928  INFO 9532 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-18 16:21:59.942  INFO 9532 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2025-05-18 16:22:05.285  WARN 9532 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:29:01.131  WARN 9532 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:29:07.712  WARN 9532 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:29:08.970  WARN 9532 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:50.160  WARN 9532 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:52.215  WARN 9532 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:53.757  WARN 9532 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:55.680  WARN 9532 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:57.020  WARN 9532 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:39:58.382  WARN 9532 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:40:00.833  WARN 9532 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:40:09.668  WARN 9532 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:40:14.989  WARN 9532 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:45:44.551  INFO 2184 --- [restartedMain] com.example.ssm.rental.Application       : Starting Application on jamie0511 with PID 2184 (E:\FYPyichi\USM2HOME\USM2Home\target\classes started by jasmine0511 in E:\FYPyichi\USM2HOME\USM2Home)
+2025-05-18 16:45:44.556  INFO 2184 --- [restartedMain] com.example.ssm.rental.Application       : No active profile set, falling back to default profiles: default
+2025-05-18 16:45:44.632  INFO 2184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-18 16:45:44.634  INFO 2184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-18 16:45:47.466  INFO 2184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9992 (http)
+2025-05-18 16:45:47.520  INFO 2184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-18 16:45:47.522  INFO 2184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-18 16:45:48.063  INFO 2184 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-05-18 16:45:48.073  INFO 2184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-18 16:45:48.074  INFO 2184 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3439 ms
+2025-05-18 16:45:48.315  INFO 2184 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-05-18 16:45:48.576  INFO 2184 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-05-18 16:45:50.543  INFO 2184 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-05-18 16:45:50.981  INFO 2184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-18 16:45:51.111  INFO 2184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9992 (http) with context path ''
+2025-05-18 16:45:51.117  INFO 2184 --- [restartedMain] com.example.ssm.rental.Application       : Started Application in 7.255 seconds (JVM running for 8.146)
+2025-05-18 16:45:51.125  INFO 2184 --- [restartedMain] com.example.ssm.rental.Application       : Rello started at http://localhost:9992
+2025-05-18 16:46:20.268  INFO 2184 --- [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-18 16:46:20.269  INFO 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-18 16:46:20.279  INFO 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-05-18 16:46:24.678  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:27.897  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:29.611  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:31.959  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:33.823  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:35.393  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:37.508  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:42.213  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:43.691  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:44.892  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:51.330  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:46:57.650  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:47:29.406  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:47:30.696  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:47:34.611  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:48:04.120  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:50:13.633  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:51:34.098  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:51:45.136  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:51:47.736  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:51:49.968  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 16:51:51.430  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 17:26:29.985  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 17:26:57.493  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:22:22.991  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:22:53.855  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:35:59.542  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:05.111  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:06.475  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:08.639  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:11.121  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:13.339  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:36:18.337  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:38:18.583  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:38:20.785  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:39:18.117  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:39:20.190  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:39:23.922  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:39:27.657  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:40:06.611  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:40:53.690  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:40:55.932  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:40:58.922  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:53:27.767  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:53:30.356  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:53:32.952  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:54:02.627  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:55:07.969  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:55:10.044  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:55:46.251  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 19:55:48.291  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:12:24.770  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:12:30.798  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:12:33.763  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:12:34.793  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:04.438  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:05.706  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:07.832  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:13.367  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:14.464  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:16.774  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:19.016  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:13:20.417  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:15:47.358  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:15:48.151  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:15:53.661  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:20:36.003  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:22:46.694  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:25:46.999  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:26:08.115  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:26:12.635  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:26:29.732  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:26:34.737  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:27:28.446  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:38:11.603  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:38:16.901  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:40:55.444  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:40:59.510  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:41:16.824  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:50:05.387  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:53:06.639  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:56:55.147  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:57:01.410  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:57:11.719  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 20:57:43.504  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:04:55.642  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:06:21.412  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:28:16.670  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:32:59.938  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:37:52.932  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:37:55.625  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:37:59.050  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:01.413  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:07.103  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:09.179  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:12.363  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:14.051  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:38:19.148  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:56:21.279  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:56:23.921  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:56:45.353  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:14.150  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:17.118  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:18.810  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:20.761  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:22.665  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:27.678  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 21:59:46.974  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:00:00.056  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:01:25.185  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:02:40.267  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:02:50.609  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:06:02.557  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:08:28.262  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:08:30.125  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:11:19.657  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:11:25.442  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:11:27.623  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:11:28.893  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:16:21.188  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:16:27.896  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:16:52.435  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:16:58.040  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:03.145  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:13.378  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:15.723  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:28.098  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:30.378  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:32.371  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:35.524  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:17:38.656  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:18:37.968  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:18:48.737  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:19:01.904  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:17.493  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:21.811  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:29.598  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:39.510  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:43.180  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:50.355  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:20:56.121  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:00.516  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:10.815  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:21.227  WARN 2184 --- [http-nio-9992-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:32.082  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:43.164  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:21:54.011  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:05.074  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:16.209  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:27.034  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:38.191  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:49.395  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:22:59.975  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:23:11.300  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:23:22.184  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:23:32.947  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:23:44.214  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:23:56.095  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:00.827  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:07.051  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:09.770  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:11.509  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:20.044  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:24:26.129  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:25:55.046  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:26:09.723  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:26:18.076  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:26:19.932  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:26:24.112  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:26:29.112  WARN 2184 --- [http-nio-9992-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:27:58.032  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:28:02.550  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:28:10.528  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:30:49.873  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:32:52.999  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:33:13.860  WARN 2184 --- [http-nio-9992-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:34:19.972  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:34:49.635  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:36:32.951  WARN 2184 --- [http-nio-9992-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:36:49.723  WARN 2184 --- [http-nio-9992-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:00.134  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:04.107  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:23.905  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:33.325  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:42.782  WARN 2184 --- [http-nio-9992-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:37:50.203  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:38:00.824  WARN 2184 --- [http-nio-9992-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:38:04.400  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:39:00.476  WARN 2184 --- [http-nio-9992-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:39:42.895  WARN 2184 --- [http-nio-9992-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-05-18 22:40:01.557  WARN 2184 --- [http-nio-9992-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico

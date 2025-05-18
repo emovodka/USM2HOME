@@ -1,13 +1,209 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ include file="../common/head.jsp" %>
 
+<style>
+/* 1. 全局字体和背景 */
+body {
+    font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+    background: #f7f7fa;
+    color: #222;
+}
+
+/* 2. Hero Banner */
+.hero_banner {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 24px rgba(110,18,126,0.08);
+    position: relative;
+    margin-bottom: 32px;
+}
+.hero_banner h1 {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    margin-bottom: 12px;
+}
+.hero_banner p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+/* 3. 搜索框卡片化 */
+.full_search_box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(110,18,126,0.08);
+    padding: 24px 18px 12px 18px;
+    margin-top: 18px;
+}
+.full_search_box .form-group label {
+    font-weight: 500;
+    color: #6e127e;
+}
+.full_search_box .form-control {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+.full_search_box .btn.search-btn {
+    background: #6e127e;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px 0;
+    width: 100%;
+    transition: background 0.2s;
+}
+.full_search_box .btn.search-btn:hover {
+    background: #4d0e5e;
+}
+
+/* 4. 卡片式房源列表 */
+.single_property_style.property_style_2.modern {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(110,18,126,0.10);
+    margin-bottom: 32px;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+}
+.single_property_style.property_style_2.modern:hover {
+    box-shadow: 0 8px 32px rgba(110,18,126,0.18);
+    transform: translateY(-4px) scale(1.02);
+}
+.listing_thumb_wrapper img {
+    border-radius: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.property_caption_wrappers {
+    padding: 18px 20px 0 20px;
+    flex: 1 1 auto;
+}
+.pr-property_title a {
+    color: #222;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.listing-location-name a {
+    color: #6e127e;
+    font-size: 0.98rem;
+    text-decoration: none;
+}
+.property-real-price a {
+    color: #6e127e;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.deposit-text {
+    color: #888;
+    font-size: 0.97rem;
+    margin-top: 8px;
+    font-weight: 500;
+}
+.modern_property_footer {
+    padding: 12px 20px 16px 20px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #faf7fb;
+}
+.property-lists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 18px;
+}
+.property-lists li {
+    color: #555;
+    font-size: 0.98rem;
+    display: flex;
+    align-items: center;
+}
+.property-lists img {
+    width: 18px;
+    margin-right: 6px;
+}
+.fp_types .markHouse {
+    background: #fff;
+    color: #6e127e;
+    border: 1.5px solid #6e127e;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(110,18,126,0.06);
+}
+.fp_types .markHouse:hover {
+    background: #6e127e;
+    color: #fff;
+}
+
+/* 5. section 标题 */
+.sec-heading.center h2 {
+    color: #6e127e;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.sec-heading.center p {
+    color: #666;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+}
+
+/* 6. "View More"按钮 */
+.btn-success.arrow-btn.bg-2 {
+    background: #6e127e !important;
+    border-radius: 12px;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 12px 36px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(110,18,126,0.10);
+    border: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-success.arrow-btn.bg-2:hover {
+    background: #4d0e5e !important;
+    box-shadow: 0 4px 16px rgba(110,18,126,0.18);
+}
+
+/* 7. 响应式适配 */
+@media (max-width: 991px) {
+    .hero_banner { min-height: 220px; }
+    .property_caption_wrappers { padding: 14px 10px 0 10px; }
+    .modern_property_footer { padding: 10px 10px 12px 10px; }
+}
+@media (max-width: 575px) {
+    .hero_banner h1 { font-size: 1.4rem; }
+    .sec-heading.center h2 { font-size: 1.2rem; }
+    .single_property_style.property_style_2.modern { min-height: 340px; }
+}
+</style>
 
 <!-- ============================ Hero Banner Start================================== -->
-<div class="image-cover hero_banner" style="background:#334aca url(/assets/img/city-7.jpg) no-repeat;"
+<div class="image-cover hero_banner" style="background:#6e127e url(/assets/img/usm.jpeg) no-repeat;"
      data-overlay="1">
     <div class="container">
 
@@ -137,11 +333,11 @@
                                     <a href="/house/detail/${c.id}" class="cl-blue">
                                         RM ${c.monthRent}<span class="price_status">/Month</span>
                                     </a>
-                                    <div class="deposit-text">
-                                        <c:if test="${c.deposit != null}">
-                                            Deposit: RM ${Math.round(c.deposit)}
-                                        </c:if>
-                                    </div>
+                                </div>
+                                <div class="deposit-text">
+                                    <c:if test="${c.deposit != null}">
+                                        Deposit: <span style="font-weight:600;color:#6e127e;">RM ${Math.round(c.deposit)}</span>
+                                    </c:if>
                                 </div>
                             </div>
                         </div>
@@ -224,11 +420,11 @@
                                     <a href="/house/detail/${c.id}" class="cl-blue">
                                         RM ${c.monthRent}<span class="price_status">/Month</span>
                                     </a>
-                                    <div class="deposit-text">
-                                        <c:if test="${c.deposit != null}">
-                                            Deposit: RM ${Math.round(c.deposit)}
-                                        </c:if>
-                                    </div>
+                                </div>
+                                <div class="deposit-text">
+                                    <c:if test="${c.deposit != null}">
+                                        Deposit: <span style="font-weight:600;color:#6e127e;">RM ${Math.round(c.deposit)}</span>
+                                    </c:if>
                                 </div>
                             </div>
                         </div>
