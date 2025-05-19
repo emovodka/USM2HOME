@@ -136,7 +136,7 @@ img[alt="USM Area Map"] {
 </style>
 
 <!-- ============================ Page Title Start================================== -->
-<div class="page-title" style="background:#f4f4f4 url(/assets/img/usm1.jpeg);">
+<div class="page-title" style="background:#f4f4f4 url(/assets/img/usm.jpeg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">

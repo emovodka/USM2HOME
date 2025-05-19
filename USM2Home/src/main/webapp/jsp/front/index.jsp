@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -333,11 +334,11 @@ body {
                                     <a href="/house/detail/${c.id}" class="cl-blue">
                                         RM ${c.monthRent}<span class="price_status">/Month</span>
                                     </a>
-                                </div>
-                                <div class="deposit-text">
-                                    <c:if test="${c.deposit != null}">
-                                        Deposit: <span style="font-weight:600;color:#6e127e;">RM ${Math.round(c.deposit)}</span>
-                                    </c:if>
+                                    <div class="deposit-text">
+                                        <c:if test="${c.deposit != null}">
+                                            Deposit: RM ${Math.round(c.deposit)}
+                                        </c:if>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -420,11 +421,11 @@ body {
                                     <a href="/house/detail/${c.id}" class="cl-blue">
                                         RM ${c.monthRent}<span class="price_status">/Month</span>
                                     </a>
-                                </div>
-                                <div class="deposit-text">
-                                    <c:if test="${c.deposit != null}">
-                                        Deposit: <span style="font-weight:600;color:#6e127e;">RM ${Math.round(c.deposit)}</span>
-                                    </c:if>
+                                    <div class="deposit-text">
+                                        <c:if test="${c.deposit != null}">
+                                            Deposit: RM ${Math.round(c.deposit)}
+                                        </c:if>
+                                    </div>
                                 </div>
                             </div>
                         </div>

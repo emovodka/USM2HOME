@@ -4,6 +4,83 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ include file="../common/head.jsp" %>
 
+<style>
+body {
+    font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+    background: #f7f7fa;
+    color: #222;
+}
+.property_block_wrap.style-2 {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(110,18,126,0.10);
+    padding: 36px 32px 32px 32px;
+    margin: 32px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content {
+    padding: 10px 0 0 0;
+}
+#content h2 {
+    color: #6e127e;
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin-bottom: 28px;
+    letter-spacing: 0.01em;
+}
+#content p {
+    font-size: 1.13rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 14px;
+    text-align: left;
+}
+#content strong {
+    color: #6e127e;
+    font-weight: 700;
+}
+.btn-primary {
+    background: #6e127e;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    margin-top: 18px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(110,18,126,0.10);
+}
+.btn-primary:hover {
+    background: #4d0e5e;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(110,18,126,0.18);
+    transform: translateY(-2px) scale(1.01);
+}
+.status-text {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6e127e;
+    background: #f3e6f7;
+    border-radius: 8px;
+    padding: 8px 18px;
+    margin: 18px 0;
+}
+@media (max-width: 991px) {
+    .property_block_wrap.style-2 {
+        padding: 18px 6px 18px 6px;
+    }
+    #content h2 {
+        font-size: 1.3rem;
+    }
+    #content p {
+        font-size: 1rem;
+    }
+}
+</style>
 
 <!-- ============================ Agency List Start ================================== -->
 <section class="gray-simple">

@@ -9,13 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${communityName}</title>
     <style>
-        /* 你的样式全部保留 */
+        /* 统一卡片风格，和 index.jsp 一致 */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+            background: #f7f7fa;
+            color: #222;
         }
         .header {
             background-color: #fff;
@@ -32,50 +30,77 @@
             margin: 0;
             color: #333;
         }
-        .property-info {
+        .top-section {
             display: flex;
+            gap: 32px;
+            margin: 36px 0 32px 0;
             flex-wrap: wrap;
-            margin: 30px 0;
+        }
+        .community-info-card {
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .property-details {
-            flex: 1;
-            min-width: 300px;
-            padding: 25px;
-        }
-        .info-row {
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(110,18,126,0.10);
+            padding: 32px 28px 24px 28px;
+            flex: 1 1 340px;
+            min-width: 320px;
+            max-width: 480px;
             display: flex;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
+            flex-direction: column;
+            justify-content: center;
         }
-        .info-label {
-            width: 120px;
+        .community-title {
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: #6e127e;
+            margin-bottom: 10px;
+        }
+        .info-list {
+            margin: 0 0 18px 0;
+            padding: 0;
+            list-style: none;
+        }
+        .info-list li {
+            margin-bottom: 10px;
+            font-size: 1.08rem;
+            color: #555;
+            display: flex;
+        }
+        .info-list .label {
+            width: 110px;
+            color: #a08bb7;
             font-weight: 600;
+            flex-shrink: 0;
+        }
+        .info-list .value {
+            color: #222;
+            font-weight: 500;
+        }
+        .community-description {
+            margin-top: 10px;
             color: #666;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
-        .info-value {
-            flex: 1;
-        }
-        .property-description {
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        .gallery {
-            flex: 1;
-            min-width: 300px;
-            background: #f9f9f9;
-            padding: 25px;
+        .gallery-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(110,18,126,0.10);
+            padding: 24px 18px 18px 18px;
+            flex: 1 1 340px;
+            min-width: 320px;
+            max-width: 520px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .main-image {
             width: 100%;
-            height: 300px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 10px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(110,18,126,0.08);
         }
         .thumbnail-container {
             display: flex;
@@ -85,97 +110,74 @@
         .thumbnail {
             width: 80px;
             height: 60px;
-            border-radius: 4px;
+            border-radius: 8px;
             object-fit: cover;
             cursor: pointer;
             transition: opacity 0.2s;
+            box-shadow: 0 1px 4px rgba(110,18,126,0.06);
         }
         .thumbnail:hover {
             opacity: 0.8;
         }
         .section-title {
-            margin: 40px 0 20px;
-            font-size: 22px;
-            font-weight: 600;
-            color: #333;
-            position: relative;
-            padding-left: 15px;
-        }
-        .section-title:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 5px;
-            height: 20px;
-            width: 5px;
-            background: #1e88e5;
-            border-radius: 2px;
+            color: #6e127e;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            padding-left: 0;
+            position: static;
         }
         .apartment-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 28px;
             margin-bottom: 40px;
         }
         .apartment-card {
             background: #fff;
-            border-radius: 8px;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(110,18,126,0.10);
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            transition: box-shadow 0.2s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            min-height: 340px;
         }
         .apartment-card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 8px 32px rgba(110,18,126,0.18);
+            transform: translateY(-4px) scale(1.02);
         }
         .apartment-image {
             width: 100%;
             height: 180px;
             object-fit: cover;
+            border-radius: 18px 18px 0 0;
         }
         .apartment-info {
-            padding: 15px;
+            padding: 18px 20px 12px 20px;
+            flex: 1 1 auto;
         }
         .apartment-title {
-            font-size: 18px;
-            font-weight: 600;
+            font-size: 1.18rem;
+            font-weight: 700;
+            color: #222;
             margin: 0 0 10px 0;
         }
         .apartment-details {
             display: flex;
-            justify-content: space-between;
+            gap: 18px;
             margin-bottom: 10px;
         }
-        .apartment-area, .apartment-layout {
-            font-size: 14px;
-            color: #666;
+        .apartment-layout {
+            color: #6e127e;
         }
-        .apartment-price {
-            font-size: 20px;
-            font-weight: 600;
-            color: #f44336;
-            margin: 10px 0;
-        }
-        .view-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background: #1e88e5;
-            color: #fff;
-            text-align: center;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .view-button:hover {
-            background: #1565c0;
+        .apartment-area {
+            color: #a08bb7;
         }
         .feature-icons {
             display: flex;
             gap: 15px;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .feature-icon {
             display: flex;
@@ -187,20 +189,48 @@
             margin-right: 5px;
             color: #1e88e5;
         }
+        .apartment-price {
+            color: #6e127e;
+            font-size: 1.22rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .view-button {
+            display: inline-block;
+            padding: 10px 28px;
+            background: #6e127e;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(110,18,126,0.10);
+        }
+        .view-button:hover {
+            background: #4d0e5e;
+        }
         .back-button {
             margin-top: 10px;
             margin-bottom: 10px;
             padding: 6px 18px;
-            background: #0a4981;
+            background: #6e127e;
             color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             font-size: 15px;
             cursor: pointer;
             transition: background 0.2s;
         }
         .back-button:hover {
-            background: #1565c0;
+            background: #4d0e5e;
+        }
+        @media (max-width: 991px) {
+            .top-section { flex-direction: column; gap: 18px; }
+            .gallery-card, .community-info-card { max-width: 100%; min-width: 0; }
+            .apartment-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -213,38 +243,18 @@
     </div>
     
     <div class="container">
-        <div class="property-info">
-            <div class="property-details">
-                <div class="info-row">
-                    <div class="info-label">Address</div>
-                    <div class="info-value">
-                        <c:out value="${communityAddress != null ? communityAddress : 'No address info'}"/>
-                    </div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Year Built</div>
-                    <div class="info-value">
-                        <c:out value="${communityYear != null ? communityYear : 'Unknown'}"/>
-                    </div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Developer</div>
-                    <div class="info-value">
-                        <c:out value="${communityDeveloper != null ? communityDeveloper : 'Unknown'}"/>
-                    </div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Distance</div>
-                    <div class="info-value">
-                        <c:out value="${communityDistance != null ? communityDistance : 'Unknown'}"/>
-                    </div>
-                </div>
-                <div class="property-description">
-                    <c:out value="${communityInfo}"/>
-                </div>
+        <div class="top-section">
+            <div class="community-info-card">
+                <div class="community-title">${communityName}</div>
+                <ul class="info-list">
+                    <li><span class="label">Address</span><span class="value"><c:out value="${communityAddress != null ? communityAddress : 'No address info'}"/></span></li>
+                    <li><span class="label">Year Built</span><span class="value"><c:out value="${communityYear != null ? communityYear : 'Unknown'}"/></span></li>
+                    <li><span class="label">Developer</span><span class="value"><c:out value="${communityDeveloper != null ? communityDeveloper : 'Unknown'}"/></span></li>
+                    <li><span class="label">Distance</span><span class="value"><c:out value="${communityDistance != null ? communityDistance : 'Unknown'}"/></span></li>
+                </ul>
+                <div class="community-description"><c:out value="${communityInfo}"/></div>
             </div>
-            
-            <div class="gallery">
+            <div class="gallery-card">
                 <c:choose>
                     <c:when test="${not empty communityImages}">
                         <img src="${communityImages[0]}" alt="${communityName}" class="main-image" id="mainImage">
