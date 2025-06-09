@@ -15,10 +15,11 @@ spring:
     rollback-on-commit-failure: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
+    #MySql配置
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${MYSQL_URL:jdbc:mysql://127.0.0.1:3306/rello?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&allowMultiQueries=true}
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD:85309847}
+    url: jdbc:mysql://127.0.0.1:3306/rello?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 85309847
   mvc:
     view:
       prefix: /jsp/
